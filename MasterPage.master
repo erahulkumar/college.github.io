@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title style="background-image:url(images/logo.png);">R.D. Singh College Of Education</title>
+    <link rel="icon" type="images/smart" href="images/logo.png" />
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background:url(images/background.jpg)"> 
+      <div class="container-fluid">
+          
+        <div class="row">
+            <div class="col-sm-2" style="text-align:center;">
+                <img src="images/logo.png" class="img-fluid"/>
+            </div>
+            <div class="col-sm-9">
+                <h1 style="font-family:'Times New Roman';font-size:50px;text-align:center">R.D. SINGH COLLEGE OF EDUCATION</h1>
+                <p style="font-size:12px; text-align:right;font-family:'Times New Roman';margin-right:50px;font-weight:bold;">CHANDARPUR, BUSMAHUA,SAHSON, PRAYAGRAJ, UTTAR PRADESH -221507</p>
+            </div>
+            <div class="col-sm-1" style="text-align:center;">
+                
+                <img src="images/phone.png" class="img-fluid" style="height:25px; width:25px;" />
+                <p style="font-size:12px;">+91-9453029854 <br />+91-7054023031</p>
+            </div>
+        </div>
+
+    
+        <!--Navbar start-->
+        <nav class="navbar navbar-expand-lg navbar-light navcolor sticky-top">
+            
+            <div class="container">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Default.aspx">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About Us.aspx">About Us</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle dropdown1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Institute
+        </a>
+        <div class="dropdown-menu navcolor dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="upload/B.ED%20UPDATED%20SYLLABUS_10-12-2018.pdf" target="_blank">D.El.Ed. Course 2020-21</a>
+          <a class="dropdown-item" href="upload/BTE-EN.pdf" target="_blank">B.Ed Course 2020-21</a>
+          <a class="dropdown-item" href="upload/Yearly Fee Charge.pdf" target="_blank">Yearly Fees Charge</a>
+          <a class="dropdown-item" href="#">Admission</a>
+          <a class="dropdown-item" href="#">Courses details</a>
+          <a class="dropdown-item" href="Faculties-Profile.aspx">Faculties Profile</a>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Affilation.aspx">Affilation</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Gallery.aspx">Gallery</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Faculties-Profile.aspx">Faculties Profile</a>
+      </li>
+        <!--li class="nav-item">
+        <a class="nav-link" href="#">Certificate</a>
+      </!--li-->
+        <li class="nav-item">
+        <a class="nav-link" href="Contant Us.aspx">Contact Us</a>
+      </li>
+        
+    </ul>
+  </div>
+            </div>
+
+        </nav>
+        <!--Navbar Stop-->
+
+
+    <!-- child section start-->
+
+    <div class="container-fluid">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- child section stop-->
+
+    <!--footer section start-->
+    
+
+        <div class="row" style="background:#456b86;">
+           <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+               <span style="color:white; text-align:center;margin-top:10px;">Copyright&copy; 2020-21 || R.D. SINGH COLLEGE OF EDUCATION</span><br />
+            <span>
+           <a href="admin.aspx" class="web_panel_mail">
+               WEB PANEL
+            </a>
+                ||
+            <a href="#" class="web_panel_mail">
+               WEB MAIL
+            </a>
+                </span>
+            </div>
+            <div class="col-sm-5">
+                <p style="color:white; text-align:center;margin-top:10px;font-size:10px;">Develop by Er. Rahul Kumar
+                    <br />
+                    Professional of Website development & IOT Devices
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </div>
+
+     <!--footer section stop-->
+
+    
+
+   
+
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script> 
+    
+</body>
+</html>
+
