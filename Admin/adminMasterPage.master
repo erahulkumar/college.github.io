@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMasterPage.master.cs" Inherits="Admin_adminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="css/adminstyle.css" rel="stylesheet" />
+    <title style="background-image:url(../images/logo.png);">R.D. Singh College Of Education</title>
+    <link rel="icon" type="images/smart" href="../images/logo.png" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background:url(images/background.jpg)">
+   <form runat="server" method="post">
+    <div class="container-fluid">
+        <div class="row" style="height: 100px; width: auto;">
+            <div class="col-sm-3" style="font-size:20px;text-align:center;background:#17abcf;color:white;">
+                <asp:FormView ID="FormView1" runat="server" DataSourceID="admin">
+                    <ItemTemplate>
+                        Access UserId:
+                      <asp:Label ID="emailLabel" runat="server" Text='<%# Bind("email") %>' /></br>Secret Key:
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("password") %>' />
+
+                        <br />
+                    </ItemTemplate>
+                </asp:FormView>
+                <asp:SqlDataSource ID="admin" runat="server" ConnectionString="<%$ ConnectionStrings:rdsingh %>" SelectCommand="SELECT * FROM [rdsingh_admin]"></asp:SqlDataSource>
+            </div>
+
+            <div class="col-sm-9" style="font-size:20px;text-align:center;background:#17abcf;color:white;">
+                <p>Welcome to control Panel</p>
+                <p>R.D. SINGH COLLEGE OF EDUCATION</p>
+            </div>
+        </div>
+     </div>
+
+ <div class="container-fluid">
+     <div class="row">
+         <div class="col-sm-3" style="background: linear-gradient(crimson,white);">
+             <div class="row">
+                 <a href="Control_Panel.aspx" class="btn btn-lg btn-block ag">Control Panel</a>
+             </div>
+             <div class="row">
+                 <asp:Button runat="server" CssClass="btn btn-lg btn-block ag" Text="Announcement News Manager" ID="news" OnClick="news_Click" />
+             </div>
+             <div class="row">
+                 <asp:Button runat="server" CssClass="btn btn-lg btn-block ag" Text="Principal Message Manager" ID="msg" OnClick="msg_Click" />
+             </div>
+             <div class="row">
+                 <asp:Button runat="server" CssClass="btn btn-lg btn-block ag" Text="Feedback Manager" ID="feedback" OnClick="feedback_Click" />
+             </div>
+             <div class="row">
+                 <asp:Button runat="server" CssClass="btn btn-lg btn-block ag" Text="Change Password" ID="pass" OnClick="pass_Click" />
+             </div>
+             <div class="row">
+                 <asp:LinkButton runat="server" CssClass="btn btn-lg btn-block ag" ID="Logout" Text="Logout" OnClick="Logout_Click"></asp:LinkButton>
+             </div>
+
+         </div>
+         <div class="col-sm-9">
+             <!--child section-->
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+         </div>
+         <!--child section-->
+
+     </div>
+  </div>
+
+   
+</form> 
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script> 
+
+</body>
+</html>

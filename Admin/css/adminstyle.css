@@ -1,0 +1,19 @@
+﻿.ag:hover {
+
+    background:#16195a;
+    color:white;
+}
+.sm1 {
+    background:linear-gradient(crimson,white);
+}
+.adc {
+    background:url(images/admincontrol.jpg);
+}
+.sp1 {
+    margin-left:5px;
+    margin-bottom:7px;
+    text-align:center;
+   font-size:18px;
+   font-weight:bold;
+   height:60px;
+}
