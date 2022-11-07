@@ -11,7 +11,7 @@
                     
 
                <h3  style="font-family:Arial;font-size:20px;"><img src="images/star.gif" class="img-fluid" /> 
-                <b style="color:#f00;">Addmission Open :</b> B.Ed Session 2020-2021 | College Code-H069</h3><a href="Default.aspx">Default.aspx</a>
+                <b style="color:#f00;">Addmission Open :</b> B.Ed Session 2020-2021 | College Code-H069</h3>
                 
             </marquee>
             
